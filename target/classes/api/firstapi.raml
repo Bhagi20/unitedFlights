@@ -1,0 +1,20 @@
+#%RAML 1.0
+title: firstApi
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/69381496-e4b5-40fe-a5ab-dabca61075dc/api # baseUri: http://localhost:8081/api
+/flights:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+	"code": "ER45if",
+	"price": 345.99,
+	"origin": "MUA",
+	"destination": "LAX",
+	"departureDate": "2015/02/11",
+	"planeType": "Boeing 737",
+	"airlineName": "United",
+	"emptySeats": 52
+}
